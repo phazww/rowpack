@@ -25,13 +25,12 @@
   <h2>Google permissions and why they are needed</h2>
   <ul>
     <li><code>spreadsheets.currentonly</code>: read the rows of the current spreadsheet and write the list of generated files to a sheet named "Rowpack results".</li>
-    <li><code>documents</code>: fill the copied template with your data.</li>
-    <li><code>drive.file</code>: copy the template, create the folder and the PDF files.</li>
+    <li><code>drive.file</code>: copy the template, fill the copy with your data through the Google Docs API, create the folder, and save the PDF files. This permission covers only files you picked and files the add-on created.</li>
     <li><code>script.container.ui</code>: show the sidebar and dialogs in Google Sheets.</li>
   </ul>
 
   <h2>Where data is stored</h2>
-  <p>All processing runs in Google Apps Script inside your Google account. The add-on has no server of its own and sends no spreadsheet or document content outside Google. It stores three small items with Google's script property storage: your last settings for the spreadsheet (sheet name, group column, template link, file name pattern), the ID of its "Rowpack" folder in your Drive, and a counter of documents created today, used for the free plan limit.</p>
+  <p>Processing runs in Google Apps Script inside your Google account, and the PDF files are exported and saved by the sidebar in your browser, which talks directly to Google Drive. The add-on has no server of its own and sends no spreadsheet or document content outside Google. It stores three small items with Google's script property storage: your last settings for the spreadsheet (sheet name, group column, template link, file name pattern), the ID of its "Rowpack" folder in your Drive, and a counter of documents created today, used for the free plan limit.</p>
   <p>The add-on does not use analytics, advertising or tracking, does not sell data, and does not use your data to train machine learning models.</p>
 
   <h2>Google API Services User Data Policy</h2>
