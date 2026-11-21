@@ -35,3 +35,7 @@ footer a { color: var(--muted); }
   .steps, .example, .prices { grid-template-columns: 1fr; }
   nav a { margin-left: 12px; }
 }
+.card .price { font-size: 30px; font-weight: 700; margin: 6px 0 0; color: var(--ink); }
+.card .price span { font-size: 15px; font-weight: 400; color: var(--muted); }
+.card.buy { margin-top: 18px; border-color: var(--accent); }
+.card.buy p { color: var(--ink); }
