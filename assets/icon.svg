@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- back sheet -->
+  <rect x="30" y="14" width="66" height="86" rx="7" fill="#d7e8e1"/>
+  <!-- front document -->
+  <rect x="18" y="26" width="72" height="90" rx="8" fill="#ffffff" stroke="#1f6f5c" stroke-width="5"/>
+  <!-- title line -->
+  <rect x="30" y="40" width="34" height="7" rx="3.5" fill="#1f6f5c"/>
+  <!-- table -->
+  <rect x="30" y="56" width="48" height="44" rx="3" fill="none" stroke="#1f6f5c" stroke-width="4"/>
+  <line x1="30" y1="67" x2="78" y2="67" stroke="#1f6f5c" stroke-width="4"/>
+  <line x1="30" y1="78" x2="78" y2="78" stroke="#1f6f5c" stroke-width="3"/>
+  <line x1="30" y1="89" x2="78" y2="89" stroke="#1f6f5c" stroke-width="3"/>
+  <line x1="56" y1="56" x2="56" y2="100" stroke="#1f6f5c" stroke-width="3"/>
+  <!-- grows: plus badge -->
+  <circle cx="98" cy="98" r="20" fill="#f2b33d"/>
+  <path d="M98 88v20M88 98h20" stroke="#1d1d1b" stroke-width="5" stroke-linecap="round"/>
+</svg>

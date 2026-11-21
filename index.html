@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rowpack for Google Sheets: one document per group of rows</title>
+<meta name="description" content="Turn a Google Sheet into one Google Doc and PDF per client, project or category, with a table that grows to fit every row and a total.">
+<link rel="icon" href="assets/icon-32.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="./"><img src="assets/icon-96.png" alt="">Rowpack</a>
+  <nav><a href="#how">How it works</a><a href="#syntax">Template</a><a href="#pricing">Pricing</a></nav>
+</header>
+<main>
+  <h1>One document per group of rows, with a table that grows to fit them</h1>
+  <p class="lede">A sheet of jobs becomes one invoice per client. A list of orders becomes one packing slip per customer. Each document gets all of that group's rows as table rows, and a total.</p>
+  <a class="cta" href="#install">Install for Google Sheets</a>
+  <p class="note">Works inside your Google account. Your data is not sent anywhere else.</p>
+
+  <h2 id="how">How it works</h2>
+  <div class="steps">
+    <div class="card"><h3>1. Pick the column</h3><p>Choose what to group by: client, project, category, employee. One document per value.</p></div>
+    <div class="card"><h3>2. Write the template</h3><p>A normal Google Doc. Put <code>[[Item]]</code> in one table row, and that row repeats for every sheet row in the group.</p></div>
+    <div class="card"><h3>3. Generate</h3><p>Google Docs, PDFs or both, in a folder in your Drive, with a list of links back in the sheet.</p></div>
+  </div>
+
+  <h2 id="syntax">Template syntax</h2>
+  <table class="syntax">
+    <tr><th>In the template</th><th>Becomes</th></tr>
+    <tr><td><code>{{Client}}</code></td><td>The value of the column for the group, once per document.</td></tr>
+    <tr><td><code>[[Item]]</code> <code>[[Qty]]</code> in a table row</td><td>That row, repeated for every sheet row in the group, in sheet order.</td></tr>
+    <tr><td><code>{{SUM:Amount}}</code></td><td>The group's total of a column, written the way the column shows numbers: decimals, separators, currency sign.</td></tr>
+    <tr><td><code>{{COUNT}}</code>, <code>{{TODAY}}</code></td><td>Number of rows in the group, today's date.</td></tr>
+  </table>
+  <p class="note">Values are copied as the sheet displays them, so dates and amounts keep their formats. "Check template" lists any name that matches no column before you generate.</p>
+
+  <h2 id="pricing">Pricing</h2>
+  <div class="prices">
+    <div class="card"><h3>Free</h3><ul><li>10 documents a day</li><li>Google Docs and PDF</li><li>All template features</li></ul></div>
+    <div class="card"><h3>Pro</h3><ul><li>Unlimited documents</li><li>Everything in Free</li><li>Coming soon</li></ul></div>
+  </div>
+
+  <h2 id="install">Install</h2>
+  <p>Rowpack is being prepared for the Google Workspace Marketplace. Until it is listed, write to <a href="mailto:phaz.studio@gmail.com">phaz.studio@gmail.com</a> for early access.</p>
+</main>
+<footer>
+  <span>Rowpack</span>
+  <a href="privacy.html">Privacy policy</a>
+  <a href="terms.html">Terms of service</a>
+  <a href="mailto:phaz.studio@gmail.com">Contact</a>
+  <span>Google Sheets and Google Docs are trademarks of Google LLC. Rowpack is not made by Google.</span>
+</footer>
+</body>
+</html>

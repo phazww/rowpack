@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy - Rowpack</title>
+<link rel="icon" href="assets/icon-32.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="brand" href="./"><img src="assets/icon-96.png" alt="">Rowpack</a></header>
+<main class="legal">
+  <h1>Privacy policy</h1>
+  <p>Last updated: 21 November 2026</p>
+  <p>Rowpack is an add-on for Google Sheets. It creates Google Docs and PDF files from rows of a spreadsheet and a Google Docs template. This policy explains what data it uses and why.</p>
+
+  <h2>What the add-on accesses</h2>
+  <ul>
+    <li><strong>The spreadsheet you run it in</strong>: the header row and the data rows of the sheet you choose, to group them and fill the template.</li>
+    <li><strong>The template you choose or that the add-on creates</strong>: to read its placeholders and copy it.</li>
+    <li><strong>Files the add-on creates</strong>: the generated documents and PDFs, the templates it creates for you, and its folder "Rowpack" in your Drive.</li>
+  </ul>
+  <p>The add-on cannot see other files in your Drive. It uses the <code>drive.file</code> permission, which only covers files you choose with the Google file picker and files the add-on created.</p>
+
+  <h2>Google permissions and why they are needed</h2>
+  <ul>
+    <li><code>spreadsheets.currentonly</code>: read the rows of the current spreadsheet and write the list of generated files to a sheet named "Rowpack results".</li>
+    <li><code>documents</code>: fill the copied template with your data.</li>
+    <li><code>drive.file</code>: copy the template, create the folder and the PDF files.</li>
+    <li><code>script.container.ui</code>: show the sidebar and dialogs in Google Sheets.</li>
+  </ul>
+
+  <h2>Where data is stored</h2>
+  <p>All processing runs in Google Apps Script inside your Google account. The add-on has no server of its own and sends no spreadsheet or document content outside Google. It stores three small items with Google's script property storage: your last settings for the spreadsheet (sheet name, group column, template link, file name pattern), the ID of its "Rowpack" folder in your Drive, and a counter of documents created today, used for the free plan limit.</p>
+  <p>The add-on does not use analytics, advertising or tracking, does not sell data, and does not use your data to train machine learning models.</p>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>Rowpack's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Deleting your data</h2>
+  <p>Generated files and templates are ordinary files in your Drive: delete them, or the "Rowpack" folder, like any other file. Uninstalling the add-on and removing its access in your Google Account settings (Security, Third-party apps) stops all access. Settings stored in a spreadsheet are removed when that spreadsheet is deleted.</p>
+
+  <h2>Changes</h2>
+  <p>If paid plans add a licence check, this page will say which data it uses before that change takes effect.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:phaz.studio@gmail.com">phaz.studio@gmail.com</a></p>
+</main>
+<footer><a href="./">Rowpack</a><a href="terms.html">Terms of service</a></footer>
+</body>
+</html>
