@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support - Rowpack</title>
+<link rel="icon" href="assets/icon-32.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="brand" href="./"><img src="assets/icon-96.png" alt="">Rowpack</a></header>
+<main class="legal">
+  <h1>Support</h1>
+  <p>Write to <a href="mailto:phaz.studio@gmail.com">phaz.studio@gmail.com</a>. Say what you clicked and what the sidebar showed; a copy of the template with the data removed helps. Replies usually come within two working days.</p>
+
+  <h2>Common questions</h2>
+
+  <h3>"Google blocked the request because more than one Google account is signed in"</h3>
+  <p>This is a known limit of Google add-ons when several Google accounts are signed in to one browser. Open the spreadsheet in an incognito or guest window signed in only to the account that installed Rowpack, or sign out of the other accounts.</p>
+
+  <h3>The add-on cannot open my template</h3>
+  <p>Rowpack can only open templates you choose with "Choose a template" or that it created with "Create one from my columns". A link pasted by hand to a file you never picked is refused. Click "Choose a template" and pick the file.</p>
+
+  <h3>A placeholder stayed in the document as written</h3>
+  <p>Its name matches no column. Click "Check template": it lists every such name. Names ignore case and extra spaces, so <code>{{ client }}</code> matches a column called "Client".</p>
+
+  <h3>The table row did not repeat</h3>
+  <p>Put the <code>[[Column]]</code> placeholders inside one row of a real table (Insert, Table in Google Docs). Rowpack repeats each table row that contains at least one <code>[[...]]</code>.</p>
+
+  <h3>How many documents can I make?</h3>
+  <p>The free plan makes 10 documents per user per day. The count starts again at midnight in the spreadsheet's time zone (File, Settings).</p>
+
+  <h3>How do I remove Rowpack and its data?</h3>
+  <p>Delete the "Rowpack" folder in your Drive if you no longer need the files, uninstall the add-on from Extensions, Add-ons, Manage add-ons, and remove its access in your Google Account (Security, Third-party apps). See the <a href="privacy.html">privacy policy</a>.</p>
+</main>
+<footer><a href="./">Rowpack</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of service</a></footer>
+</body>
+</html>
